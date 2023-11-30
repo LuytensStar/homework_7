@@ -124,11 +124,12 @@ def sort_files(directory):
     print('Images:', images)
 	
 
-
-
-if __name__ == '__main__':
+def main():
     import sys
     if len(sys.argv) != 2:
         sys.exit(1)
     directory = sys.argv[1]
     sort_files(directory)
+
+if __name__ == '__main__':
+    main()  
